@@ -1,0 +1,188 @@
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.game-header h2 {
+    margin-bottom: 1rem;
+    color: var(--tertiary-color);
+}
+
+.difficulty-selector {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.game-board {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.game-row {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.game-cell {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.game-cell.correct {
+    background-color: var(--danger-color);
+    color: var(--white-color);
+    border-color: var(--danger-color);
+    border-radius: 0;
+}
+
+.game-cell.present {
+    background-color: var(--warning-color);
+    color: var(--tertiary-color);
+    border-color: var(--warning-color);
+    border-radius: 50%;
+}
+
+.game-cell.absent {
+    background-color: var(--light-color);
+    color: var(--white-color);
+    border-color: var(--light-color);
+}
+
+.game-cell.filled {
+    border-color: var(--secondary-color);
+}
+
+.game-cell.active {
+    border-color: var(--tertiary-color);
+    box-shadow: 0 0 5px rgba(29, 53, 87, 0.5);
+}
+
+.game-message {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    min-height: 50px;
+}
+
+.success-message {
+    color: var(--success-color);
+}
+
+.error-message {
+    color: var(--danger-color);
+}
+
+.virtual-keyboard {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.key {
+    min-width: 40px;
+    height: 50px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.key:hover {
+    background-color: #d0d0d0;
+}
+
+.key-wide {
+    min-width: 80px;
+}
+
+.key.key-correct {
+    background-color: var(--danger-color);
+    color: var(--white-color);
+}
+
+.key.key-present {
+    background-color: var(--warning-color);
+    color: var(--tertiary-color);
+}
+
+.key.key-absent {
+    background-color: var(--light-color);
+    color: var(--white-color);
+}
+
+.game-stats {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.game-stats h3 {
+    margin-bottom: 1rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.stat-item {
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
